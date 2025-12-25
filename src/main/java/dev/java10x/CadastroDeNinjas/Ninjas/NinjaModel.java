@@ -22,6 +22,7 @@ public class NinjaModel {
 
     private String nome;
 
+    @Column(unique = true) // Indica que o campo da tabela é único.
     private String email;
 
     private int idade;
