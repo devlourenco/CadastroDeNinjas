@@ -18,13 +18,19 @@ public class NinjaModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO.IDENTITY)
+    @Column(name = "id")
     private Long id;
 
+    @Column(name = "nome")
     private String nome;
 
     @Column(unique = true) // Indica que o campo da tabela é único.
     private String email;
 
+    @Column(name = "img_url")
+    private String imgUrl;
+
+    @Column(name = "idade")
     private int idade;
 
     @ManyToOne // Many == Ninja || One == Missoes
